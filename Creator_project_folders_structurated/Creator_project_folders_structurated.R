@@ -68,7 +68,7 @@ dirs <- c(d_input,
 
 ### Create all in loop
 for (i in dirs) {
-  if (file.exists(folder_input)) {
+  if (file.exists(i)) {
     cat("The folder already exists")
   } else {
     dir.create(i, showWarnings = T, recursive = T)
